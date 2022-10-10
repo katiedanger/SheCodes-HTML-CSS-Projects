@@ -181,7 +181,12 @@
     <script>
       function changeTheme() {
         let body = document.querySelector("body");
-        body.classList.add("lime-green-body");
+
+        if (body.classList.contains("lime-green-body")) {
+          body.classList.remove("lime-green-body");
+        } else {
+          body.classList.add("lime-green-body");
+        }
       }
 
       let button = document.querySelector(".themeButton");
