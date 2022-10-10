@@ -10,7 +10,11 @@
         background-color: lightgray;
       }
 
-      .theme-button {
+      .lime-green-body {
+        background-color: #39ff14;
+      }
+
+      .themeButton {
         font-size: 14px;
         background: black;
         color: white;
@@ -57,6 +61,11 @@
         background: #39ff14;
         cursor: pointer;
       }
+
+      .themeButton:hover {
+        color: black;
+      }
+
       footer {
         text-align: center;
         margin: 10px 0;
@@ -94,11 +103,10 @@
       .grid img:hover {
         transform: scale(1.5);
       }
-      
     </style>
   </head>
   <body>
-    <button class="theme-button">Alternate Theme</button>
+    <button class="themeButton">Alternate Theme</button>
     <div class="container">
       <h1>The Gameboy DMG-01</h1>
       <h2>My favorite Gameboy!</h2>
@@ -170,5 +178,14 @@
       Coded with ❤️ by
       <a href="https://github.com/katiedanger">Katie Danger</a>
     </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.add("lime-green-body");
+      }
+
+      let button = document.querySelector(".themeButton");
+      button.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
