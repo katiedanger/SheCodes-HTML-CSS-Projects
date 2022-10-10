@@ -43,7 +43,6 @@
         border-radius: 6px;
         padding: 10px 15px;
         transition: all 150ms ease-in-out;
-      
       }
 
       button:hover {
@@ -60,7 +59,16 @@
       .learn-more-link {
         text-decoration: none;
       }
-      
+
+      .gameboy-intro-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .gameboy-intro-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
     </style>
   </head>
   <body>
@@ -70,6 +78,7 @@
       <h2>My favorite Gameboy!</h2>
       <a href="https://en.wikipedia.org/wiki/Game_Boy" target="_blank">
         <img
+          class="gameboy-intro-picture"
           src="https://i.etsystatic.com/35343858/c/3000/2384/0/243/il/de92ce/4084916748/il_680x540.4084916748_vden.jpg"
           alt="Gameboy DMG image"
         />
@@ -124,7 +133,10 @@
       </a>
       <br />
       <br />
-      <a class="learn-more-link" href="https://www.etsy.com/shop/GamerGirlGameboyMods">
+      <a
+        class="learn-more-link"
+        href="https://www.etsy.com/shop/GamerGirlGameboyMods"
+      >
         <button>Learn More About The Gameboy DMG</button>
       </a>
     </div>
