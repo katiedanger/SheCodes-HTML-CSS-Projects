@@ -10,10 +10,9 @@
         background-color: white;
       }
 
-      .darkTheme {
+      .dark {
         background-color: black;
       }
-
     </style>
   </head>
   <body>
@@ -22,8 +21,13 @@
       <button>Click To Change Theme</button>
     </div>
     <script>
+      function makeDarkTheme() {
+        let body = document.querySelector("body");
+        body.classList.add("dark");
+      }
 
-
+      let button = document.querySelector("button");
+      button = addEventListener("click", makeDarkTheme);
     </script>
   </body>
 </html>
