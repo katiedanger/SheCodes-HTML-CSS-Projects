@@ -19,19 +19,27 @@
 
       h1 {
         text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
       }
       h2 {
         text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
       }
       img {
         max-width: 100%;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;
       }
       .container {
         max-width: 600px;
         background: white;
         padding: 20px;
         border-radius: 10px;
-        margin: 20px auto;
+        margin: 15px auto;
       }
 
       button {
@@ -69,6 +77,28 @@
         filter: contrast(80%);
         transform: scale(1.1);
       }
+
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px
+       
+        
+      }
+      
+      .grid img {
+        width: 100%;
+    border-radius: 8px;
+    transition: all 150ms ease-in-out;
+      }
+
+      .grid img:hover {
+        transform: scale(1.5);
+      }
+
+      
+
     </style>
   </head>
   <body>
@@ -83,22 +113,22 @@
           alt="Gameboy DMG image"
         />
       </a>
+      <div class="grid">
+        <img
+          src="https://i.etsystatic.com/35343858/c/2147/1707/73/247/il/dc73e8/4167021607/il_680x540.4167021607_xqav.jpg"
+          alt="Gameboy DMG image"
+        />
 
-      <img
-        src="https://i.etsystatic.com/35343858/c/2147/1707/73/247/il/dc73e8/4167021607/il_680x540.4167021607_xqav.jpg"
-        alt="Gameboy DMG image"
-      />
+        <img
+          src="https://i.etsystatic.com/35343858/c/2355/1871/0/271/il/9ad666/4131928270/il_680x540.4131928270_bj50.jpg"
+          alt="Gameboy DMG image"
+        />
 
-      <img
-        src="https://i.etsystatic.com/35343858/c/2355/1871/0/271/il/9ad666/4131928270/il_680x540.4131928270_bj50.jpg"
-        alt="Gameboy DMG image"
-      />
-
-      <img
-        src="https://i.etsystatic.com/35343858/c/3000/2384/0/269/il/fc9d27/4094713516/il_680x540.4094713516_bmot.jpg"
-        alt="Gameboy DMG image"
-      />
-
+        <img
+          src="https://i.etsystatic.com/35343858/c/3000/2384/0/269/il/fc9d27/4094713516/il_680x540.4094713516_bmot.jpg"
+          alt="Gameboy DMG image"
+        />
+      </div>
       <p>
         The Game Boy is an 8-bit handheld game console developed and
         manufactured by Nintendo. It was first released in Japan on April 21,
